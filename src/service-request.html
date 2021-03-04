@@ -1,0 +1,102 @@
+---
+title: Service Request
+headline: Lawn Care Service Estimate
+layout: form-master.liquid
+---
+
+<h2 class="h4">Request Service Estimate</h2>
+<form action="{{ '/service-request-response' | url }}">
+  <!-- name -->
+  <div class="mb-3">
+    <label for="Name" class="form-label">Name</label>
+    <input type="name" id="Name" name="name" class="form-control" required>
+  </div>
+  <!-- email -->
+  <div class="mb-3">
+    <label for="Email" class="form-label">Email</label>
+    <input type="email" id="Email" name="email" class="form-control" required>
+  </div>
+  <!-- tel -->
+  <div class="mb-3">
+    <label for="Phone" class="form-label">Phone</label>
+    <input type="tel" id="Phone" name="phone" class="form-control" required>
+  </div>
+  <!-- address -->
+  <fieldset>
+    <legend class="h6">Address</legend>
+    <div class="mb-3">
+      <label for="addressStreet" class="form-label">Street Address</label>
+      <input type="address" id="addressStreet" name="street" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="addressCity" class="form-label">City</label>
+      <input type="city" id="addressCity" name="city" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="addressZip" class="form-label">Zip</label>
+      <input type="zip" id="addressZip" name="phone" class="form-control" required>
+    </div>
+  </fieldset>
+  <!-- subject -->
+  <div class="mb-3">
+    <fieldset>
+      <legend class="h6">Services</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="mowing" id="mowing" name="services">
+        <label class="form-check-label" for="mowing">
+          Weekly Lawn Mowing
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="cleanup" id="cleanup" name="services">
+        <label class="form-check-label" for="cleanup">
+          Yard Clean-up
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="beds" id="beds" name="services">
+        <label class="form-check-label" for="beds">
+          Flower Bed Preparation and Planting
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="mulching" id="mulching" name="services">
+        <label class="form-check-label" for="mulching">
+          Mulching
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="brushes" id="brushes" name="services">
+        <label class="form-check-label" for="brushes">
+          Brush Trimming and Pruning
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="lawn" id="lawn" name="services">
+        <label class="form-check-label" for="lawn">
+          Lawn Aeration and Seeding
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="leaves" id="leaves" name="services">
+        <label class="form-check-label" for="leaves">
+          Leaf Removal
+        </label>
+      </div>
+    </fieldset>
+  </div>
+  <!-- date -->
+  <div class="mb-3">
+    <label for="Comment" class="form-label">Please Provide a Desired Start Date</label>
+    <input type="date" name="date" id="Date" class="form-control" required>
+  </div>
+  <!-- comments -->
+  <div class="mb-3">
+    <label for="Comment" class="form-label">Comment</label>
+    <textarea name="comment" id="Comment" class="form-control" rows="5"></textarea>
+  </div>
+  <!-- submit -->
+  <div class="text-center">
+    <input type="submit" class="btn btn-success">
+  </div>
+</form>

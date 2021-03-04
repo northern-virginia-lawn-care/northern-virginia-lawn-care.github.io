@@ -1,0 +1,51 @@
+---
+title: Contact
+headline: Help from Experienced Lawn Care Professionals
+layout: form-master.liquid
+tags:
+  - nav
+---
+
+<h2>General Support</h2>
+<form action="{{ '/contact-response' | url }}">
+  <!-- name -->
+  <div class="mb-3">
+    <label for="supportName" class="form-label">Name</label>
+    <input type="name" id="supportName" name="name" class="form-control" required>
+  </div>
+  <!-- email -->
+  <div class="mb-3">
+    <label for="supportEmail" class="form-label">Email</label>
+    <input type="email" id="supportEmail" name="email" class="form-control" required>
+  </div>
+  <!-- tel -->
+  <div class="mb-3">
+    <label for="supportPhone" class="form-label">Phone</label>
+    <input type="tel" id="supportPhone" name="phone" class="form-control" required>
+  </div>
+  <!-- subject -->
+  <div class="mb-3">
+    <label for="supportTopic" class="form-label">Topic</label>
+    <select name="topic" id="supportTopic" class="form-control" required>
+      <option value="lawn">Lawn Service</option>
+      <option value="landscaping">Landscaping</option>
+      <option value="billing">Billing</option>
+      <option value="account">Account</option>
+      <option value="compliment">Compliment</option>
+      <option value="complaint">Complaint</option>
+      <option value="comment">Comment</option>
+      <option value="website">Website</option>
+      <option value="social media">Social Media</option>
+      <option value="marketing">Marketing</option>
+    </select>
+  </div>
+  <!-- comments -->
+  <div class="mb-3">
+    <label for="supportComment">Comment</label>
+    <textarea name="comment" id="supportComment" class="form-control" rows="5" required></textarea>
+  </div>
+  <!-- submit -->
+  <div class="text-center">
+    <input type="submit" class="btn btn-success">
+  </div>
+</form>

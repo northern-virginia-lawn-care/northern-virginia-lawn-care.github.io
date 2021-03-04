@@ -1,0 +1,15 @@
+---
+layout: page-slim
+---
+
+<div class="row mb-5">
+    <div class="col offset-lg-2 col-lg-8 mb-5">
+        {{ content }}
+        <dl>
+            {% for item in questions %}
+                <dt>{{ item.title }}</dt>
+                <dd>{{ item.answer }}</dd>
+            {% endfor %}
+        </dl>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+---
+title: Franco American Mowing
+layout: 'default.liquid'
+tags:
+  - nav
+---
+
+<div class="row">
+    <div class="col-lg-8 offset-lg-2 py-5 text-center">
+        <h1 class="text-success">Mowing, Landscaping, and Full-service Lawn Care in Northern Virginia</h1>
+        <p class="my-3">
+            Established in 2000, Franco American Mowing, Inc. has been providing quality residential lawn mowing and landscaping services to the Northern Virginia area over twenty years!.
+        </p>
+        <p class="my-3">We use only small, commercial, 21-inch hand held mowers to eliminate damage from large machinery.
+        </p>
+        <p>When you hire our company, your lawn will be in good hands.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8 offset-lg-2 text-center">
+        <h2 class="mb-5">Our Services</h2>
+        <h3>What is Full-service Lawn Care?</h3>
+        <div class="mb-5 text-justify">
+            <p>Franco American Mowers provide much more than mowing to our customers. Our full-service plan meets all your lawn care needs. Including lawn clean-up and treatment, seeding, tending plant and flower beds, and maintaining shrubs and bushes, our full-service lawn care runs
+                <a href="{{ '/calendar-of-services/' | url }}">throughout the year</a> so your lawn looks good whatever the season.</p>
+            <p>We understand each homeowner's needs are unique. Customers can choose from our services separately or request the full-service lawn maintenance plan.</p>
+        </div>
+        <div class="row row-cols-md-3 g-3">
+            {% for service in collections.services %}
+            <div class="col mb-3">
+                <div class="h-100">
+                    <p class=""><a href="{{ service.url | url }}" class="btn border-success btn-block">{{ service.data.title }}</a></p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,92 @@
+[
+    {
+        "month": "March",
+        "services": [
+            "Yard Clean-Ups",
+            "Bed Preparation",
+            "Mulching",
+            "Beds Re-edged",
+            "Start of Lawn Mowing"
+        ]
+    },
+    {
+        "month": "April",
+        "services": [
+            "Weekly Lawn Mowing",
+            "Yard Clean-Ups",
+            "Bed Preparation",
+            "Mulching",
+            "Beds Re-edged",
+            "Planting"
+        ]
+    },
+    {
+        "month": "May",
+        "services": [
+            "Weekly Lawn Mowing",
+            "Yard Clean-Ups",
+            "Bed Preparation",
+            "Mulching",
+            "Beds Re-edged",
+            "Planting"
+        ]
+    },
+    {
+        "month": "June",
+        "services": [
+            "Weekly Lawn Mowing",
+            "Bed Preparation",
+            "Mulching",
+            "Beds Re-edged",
+            "Planting/Transplanting",
+            "Bush Trimming/Pruning"
+        ]
+    },
+    {
+        "month": "July",
+        "services": [
+            "Weekly Lawn Mowing",
+            "Bush Trimming/Pruning",
+            "Bed Re-edging",
+            "Weeding"
+        ]
+    },
+    {
+        "month": "August",
+        "services": [
+            "Weekly Lawn Mowing",
+            "Bush Trimming/Pruning",
+            "Bed Re-edging",
+            "Weeding"
+        ]
+    },
+    {
+        "month": "September",
+        "services": []
+    },
+    {
+        "month": "October",
+        "services": [
+            "Weekly Lawn Mowing",
+            "Aeration/Seeding",
+            "Mulching",
+            "Planting/Transplanting",
+            "Bed Re-edging",
+            "Leaf Removal",
+            "Fall Bush Trimming/Pruning"
+        ]
+    },
+    {
+        "month": "November",
+        "services": [
+            "End of Weekly Lawn Mowing",
+            "Leaf Removal"
+        ]
+    },
+    {
+        "month": "December",
+        "services": [
+            "Leaf Removal"
+        ]
+    }
+]

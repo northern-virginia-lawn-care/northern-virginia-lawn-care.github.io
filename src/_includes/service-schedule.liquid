@@ -1,0 +1,97 @@
+---
+title: Service Schedule
+layout: default.liquid
+schedule:
+  - name: March
+    services:
+       - Yard Clean-Ups,
+       - Bed Preparation
+       - Mulching
+       - Beds Re-edged,
+       - Start of Lawn Mowing
+  - name: April
+    services:
+      - Weekly Lawn Mowing
+      - Weekly Lawn Mowing
+      - Yard Clean-Ups
+      - Bed Preparation
+      - Mulching
+      - Beds Re-edged
+      - Planting
+  - name: May
+    services:
+      - Weekly Lawn Mowing
+      - Yard Clean-Ups
+      - Bed Preparation
+      - Mulching
+      - Beds Re-edged
+      - Planting
+  - name: June
+    services:
+      - Weekly Lawn Mowing
+      - Bed Preparation
+      - Mulching
+      - Beds Re-edged
+      - Planting/Transplanting
+      - Bush Trimming/Pruning
+  - name: July
+    services:
+      -  Weekly Lawn Mowing
+      -  Bush Trimming/Pruning
+      - Bed Re-edging
+      - Weeding
+  - name: August
+    services:
+      - Weekly Lawn Mowing
+      - Bush Trimming/Pruning
+      - Bed Re-edging
+      - Weeding
+  - name: September
+    services:
+      - Weekly Lawn Mowing
+      - Aeration/Seeding
+      - Mulching
+      - Bed Preparation
+      - Planting/Transplanting
+      - Bed Re-edging
+  - name: October
+    services:
+      - Weekly Lawn Mowing
+      - Aeration/Seeding
+      - Mulching
+      - Planting/Transplanting
+      - Bed Re-edging
+      - Leaf Removal
+      - Fall Bush Trimming/Pruning
+  - name: November
+    services:
+      - End of Weekly Lawn Mowing
+      - Leaf Removal
+  - name: December
+    services:
+      - Leaf Removal
+---
+{{ content }}
+<div class="row">
+    <div class="col-lg-8 offset-lg-2">
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+
+            {% for month in schedule %}
+                <div class="col mb-3">
+                    <div class="card h-100 border-success">
+                        <p class="card-header  h4 text-center bg-success text-light">{{ month.name }}</p>
+                        <div class="card-body">
+
+                            <ul>
+                                {% for service in month.services %}
+                                    <li>{{ service }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

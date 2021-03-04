@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<ul class="row list-unstyled">
+    {% for service in collections.services %}
+        <li class="card mb-3 rounded-0 border-0 col-md-6 col-lg-4 flex-fill">
+            <img src="{{ service.data.thumbnail | url }}" alt="{{ service.data.title }}" class="card-img-top border-0">
+            <div class="card-body">
+                <p class="card-title text-center h4"><a href="{{ service.url | url }}" class="text-success">{{ service.data.title }}</a></p>
+                <!-- <p class="card-text">{{ service.templateContent | truncatewords: 20 }}</p> -->
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+
+<div class="row">
+    <div class="col col-md-6 offset-md-3">
+        <div class="text-center my-5 card text-success">
+            <p class="h4 card-header">
+                Scheduling Services
+            </p>
+            <p class="card-body">Services are reserved on a first-come-first-served basis.</p>
+            <div class="card-footer"><a href="{{ '/service-request/' | url }}" class="btn btn-success text-warning">SCHEDULE SERVICES</a></div>
+        </div>
+    </div>
+</div>
