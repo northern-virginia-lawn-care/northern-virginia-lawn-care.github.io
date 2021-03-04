@@ -17,18 +17,18 @@ layout: default.liquid
         </article>
     </div>
     <div class="col-md-4">
-        <p class="h4 text-center text-success">All Our Services</p>
+        <p class="h4 text-center text-success"><a href="{{ '/services/' | url }}" class="text-dark">All Our Services</a></p>
         <ul class="nav flex-column">
             {% for service in collections.services %}
                 <li class="nav-item"><a href="{{ service.url | url }}" class="nav-link">{{ service.data.title }}</a></li>
             {% endfor %}
         </ul>
-        <div class="text-center my-5 card text-success">
+        <div class="text-center my-5 card">
             <p class="h4 card-header">
                 Scheduling Services
             </p>
             <p class="card-body">Services are reserved on a first-come-first-served basis.</p>
-            <div class="card-footer"><a href="{{ '/service-request/' | url }}" class="btn btn-success text-warning">SCHEDULE SERVICES</a></div>
+            <div class="card-footer"><a href="{{ '/service-request/' | url }}" class="btn btn-success text-light">SCHEDULE SERVICES</a></div>
         </div>
     </div>
 </div>
