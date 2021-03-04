@@ -1,5 +1,6 @@
 ---
 title: Weekly Lawn Mowing
+headline: Weekly Lawn Mowing
 thumbnail: "/img/weekly-lawn-mowing.jpg"
 ---
 

@@ -4,10 +4,15 @@ layout: default.liquid
 <div class="row">
     <div class="col-md-8">
         <article>
-            <h2>{{ title }}</h2>
+            {% if headline %}
+                {% assign title = headline %}
+            {% endif %}
+            <h1>{{ title }}</h1>
+            {% if thumbnail %}
             <figure class="figure my-3">
                 <img src="{{ thumbnail }}" alt="{{ title }}" class="img-fluid">
             </figure>
+            {% endif %}
             {{ content }}
         </article>
     </div>
