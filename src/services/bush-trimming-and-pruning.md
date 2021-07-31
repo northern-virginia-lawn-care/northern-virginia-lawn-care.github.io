@@ -1,5 +1,5 @@
 ---
-title: Brush Trimming and Pruning
+title: Bush Trimming and Pruning
 thumbnail: "/img/brush-trimming-and-pruning.jpg"
 ---
 
